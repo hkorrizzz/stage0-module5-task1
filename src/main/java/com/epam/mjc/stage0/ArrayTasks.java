@@ -1,6 +1,8 @@
 package com.epam.mjc.stage0;
 
 
+import org.jetbrains.annotations.NotNull;
+
 public class ArrayTasks {
 
 
@@ -18,7 +20,7 @@ public class ArrayTasks {
     }
 
 
-    public int totalSum(int[] arr) {
+    public int totalSum(int @NotNull [] arr) {
         int sum = 0;
         for (int j : arr) {
             sum += j;
@@ -27,7 +29,7 @@ public class ArrayTasks {
     }
 
 
-    public int findIndexOfNumber(int[] arr, int number) {
+    public int findIndexOfNumber(int @NotNull [] arr, int number) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == number) {
                 return i;
@@ -37,7 +39,7 @@ public class ArrayTasks {
     }
 
 
-    public String[] reverseArray(String[] arr) {
+    public String[] reverseArray(String @NotNull [] arr) {
         String[] reversed = new String[arr.length];
         for (int i = 0; i < arr.length; i++) {
             reversed[i] = arr[arr.length - 1 - i];
